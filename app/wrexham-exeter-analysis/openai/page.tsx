@@ -175,7 +175,7 @@ const OpenAIAnalysisPage = () => {
               <div className="flex items-center mb-4">
                 <div className="p-2 mr-3 rounded-lg bg-gradient-to-br from-blue-500/20 to-blue-700/20 text-blue-400">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
                 </svg>
                 </div>
                 <h3 className="font-medium text-xl text-blue-400">Expectation</h3>
@@ -260,17 +260,17 @@ const OpenAIAnalysisPage = () => {
                   <div className="flex space-x-1">
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
-                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
+                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">L</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
+                    <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-slate-400">Exeter Form (Last 5)</span>
                   <div className="flex space-x-1">
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
                     <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
+                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
+                    <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
                   </div>
@@ -573,13 +573,13 @@ const OpenAIAnalysisPage = () => {
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
                       </svg>
-                      Download Data
+                      Download Data (todo)
                     </button>
                     <button className="flex items-center text-sm bg-blue-900/20 border border-blue-900/30 text-blue-400 px-3 py-1 rounded-lg hover:bg-blue-900/30 transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
-                      View Advanced Stats
+                      View Advanced Stats (todo)
                     </button>
                   </div>
                 </div>
@@ -591,6 +591,7 @@ const OpenAIAnalysisPage = () => {
         
         {/* BEGIN: ENHANCED MATHEMATICAL ANALYSIS */}
         <section className="mb-12">
+        <div className="relative overflow-hidden bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-xl border border-slate-700/60 shadow-lg" style={{ scrollBehavior: 'auto' }}>
           <div className="relative overflow-hidden bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-xl border border-slate-700/60 shadow-lg">
             {/* Decorative background elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
@@ -767,10 +768,11 @@ const OpenAIAnalysisPage = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  View Full Mathematical Details
+                  View Full Mathematical Details... maybe someday
                 </button>
               </div>
             </div>
+          </div>
           </div>
         </section>
         {/* END: ENHANCED MATHEMATICAL ANALYSIS */}

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Inter, Playfair_Display } from 'next/font/google';
 
@@ -12,6 +12,11 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 const GeminiAnalysisPage = () => {
   // State to track PDF loading status
   const [pdfLoaded, setPdfLoaded] = useState(false);
+
+   // Scroll to top when the component mounts FIX
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   // Handle PDF load event
   const handlePdfLoad = () => {
@@ -51,7 +56,7 @@ const GeminiAnalysisPage = () => {
           <div className="flex items-center justify-between border-b border-slate-700 pb-6 mb-6">
             <Link href="/wrexham-exeter-analysis" className="inline-flex items-center text-slate-400 hover:text-emerald-400 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
               Back to Match Overview
             </Link>
@@ -261,17 +266,17 @@ const GeminiAnalysisPage = () => {
                   <div className="flex space-x-1">
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
-                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
+                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">L</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
+                    <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-slate-400">Exeter Form (Last 5)</span>
                   <div className="flex space-x-1">
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
                     <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
+                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
+                    <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
                   </div>
@@ -758,7 +763,7 @@ const GeminiAnalysisPage = () => {
                 </div>
                 
                 <p className="text-slate-300">
-                  The values are normalized so the sum across all possible scorelines equals 1. The most likely outcome is a 1-0 Wrexham win with a 16% probability, which aligns with our observed data.
+                  The values are normalized so the sum across all possible scorelines equals 1. The most likely score is a 1-1 Wrexham draw with a 15% probability, but overall Wrexham is still favored.
                 </p>
               </div>
               

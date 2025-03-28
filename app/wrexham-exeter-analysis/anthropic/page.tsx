@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Inter, Playfair_Display } from 'next/font/google';
 
@@ -12,6 +12,11 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 const AnthropicAnalysisPage = () => {
   // State to track PDF loading status
   const [pdfLoaded, setPdfLoaded] = useState(false);
+
+   // Scroll to top when the component mounts FIX
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   // Handle PDF load event
   const handlePdfLoad = () => {
@@ -261,17 +266,17 @@ const AnthropicAnalysisPage = () => {
                   <div className="flex space-x-1">
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
-                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
+                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">L</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
+                    <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-slate-400">Exeter Form (Last 5)</span>
                   <div className="flex space-x-1">
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
                     <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
-                    <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 text-xs flex items-center justify-center font-medium">L</span>
+                    <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
+                    <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-green-500/20 text-green-400 text-xs flex items-center justify-center font-medium">W</span>
                     <span className="w-6 h-6 rounded-full bg-slate-500/20 text-slate-400 text-xs flex items-center justify-center font-medium">D</span>
                   </div>
