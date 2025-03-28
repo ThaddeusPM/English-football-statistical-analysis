@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Inter, Playfair_Display } from 'next/font/google';
-import React, { Suspense, useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 // Font setup
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
