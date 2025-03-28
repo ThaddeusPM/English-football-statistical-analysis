@@ -177,7 +177,7 @@ const AnthropicAnalysisPage = () => {
                 <div className="pl-8 pt-4">
                   <p className="text-slate-300 leading-relaxed">
                     Expect a tight encounter with few clear-cut chances. 
-                    Wrexham's need for a win is greater and their quality a bit higher, 
+                    Wrexham&apos;s need for a win is greater and their quality a bit higher, 
                     so a <span className="text-green-400 font-medium">narrow Wrexham win (1–0)</span> is the most likely outcome in our 
                     analysis – but it will be hard-fought.
                   </p>
@@ -192,7 +192,7 @@ const AnthropicAnalysisPage = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <span className="ml-2 text-sm text-slate-400">Analysis based on vibes and Claude's eternal suffering</span>
+                  <span className="ml-2 text-sm text-slate-400">Analysis based on vibes and Claude&apos;s eternal suffering</span>
                 </div>
               </div>
             </div>
@@ -634,7 +634,7 @@ const AnthropicAnalysisPage = () => {
 
               {/* Section 2: Deriving Expected Goals */}
               <div className="mb-8">
-                <h3 className="text-xl font-semibold text-green-400 mb-4">1. Deriving Each Team's Expected Goals (λ)</h3>
+                <h3 className="text-xl font-semibold text-green-400 mb-4">1. Deriving Each Team&apos;s Expected Goals (λ)</h3>
                 
                 <div className="p-4 bg-slate-800/50 rounded-lg border border-slate-700/50 mb-4">
                   <div className="flex flex-col space-y-2">
@@ -653,7 +653,7 @@ const AnthropicAnalysisPage = () => {
                   </div>
                   
                   <p className="text-slate-400 text-sm mt-3">
-                    Exeter's 4-3-3 struggled to contain Wrexham's central overloads, with their wingers often caught too high up the pitch. The visitors' pressing was inconsistent, allowing Wrexham to build attacks comfortably from the back.
+                    Exeter&apos;s 4-3-3 struggled to contain Wrexham&apos;s central overloads, with their wingers often caught too high up the pitch. The visitors&apos; pressing was inconsistent, allowing Wrexham to build attacks comfortably from the back.
                   </p>
                 </div>
               </div>
@@ -676,7 +676,7 @@ const AnthropicAnalysisPage = () => {
                 </div>
                 
                 <p className="text-slate-300 mb-4">
-                  where λ is that team's expected goals.
+                  where λ is that team&apos;s expected goals.
                 </p>
                 
                 <h4 className="text-lg font-medium text-blue-400 mb-3">2.2 Independence Assumption</h4>
