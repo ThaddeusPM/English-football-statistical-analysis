@@ -3,7 +3,7 @@
 import './globals.css'
 
 
-import { JSX, ReactNode, useEffect } from 'react';
+import { JSX, ReactNode} from 'react';
 import ScrollToTop from './components/ScrollToTop';
 
 interface RootLayoutProps {
