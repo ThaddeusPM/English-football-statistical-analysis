@@ -11,17 +11,8 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 // Main component declaration
 const OpenAIAnalysisPage = () => {
   // State to track PDF loading status
-  const [pdfLoaded, setPdfLoaded] = useState(false);
   
-  // Handle PDF load event
-  const handlePdfLoad = () => {
-    setPdfLoaded(true);
-  };
-  
-  // Handle PDF error event
-  const handlePdfError = () => {
-    setPdfLoaded(false);
-  };
+
   
   // Scoreline probability data
   const data = [
@@ -799,8 +790,6 @@ const OpenAIAnalysisPage = () => {
                 data="/wrexham-vs-exeter-openAI-o3.pdf#toolbar=1&navpanes=0&scrollbar=1&view=FitH"  
                 type="application/pdf" 
                 className="w-full h-[500px] rounded"
-                onLoad={handlePdfLoad}
-                onError={handlePdfError}
               >
                 <div className="w-full h-[500px] bg-gray-100 rounded flex items-center justify-center">
                   <div className="text-gray-400 flex flex-col items-center">

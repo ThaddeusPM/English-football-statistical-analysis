@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Inter, Playfair_Display } from 'next/font/google';
 
@@ -10,23 +10,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 
 // Main component declaration
 const GeminiAnalysisPage = () => {
-  // State to track PDF loading status
-  const [pdfLoaded, setPdfLoaded] = useState(false);
 
-   // Scroll to top when the component mounts FIX
-   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  
-  // Handle PDF load event
-  const handlePdfLoad = () => {
-    setPdfLoaded(true);
-  };
-  
-  // Handle PDF error event
-  const handlePdfError = () => {
-    setPdfLoaded(false);
-  };
   
   // Scoreline probability data
   const data = [
@@ -803,8 +787,6 @@ const GeminiAnalysisPage = () => {
                 data="/wrexham-vs-exeter-gemini.pdf#toolbar=1&navpanes=0&scrollbar=1&view=FitH"
                 type="application/pdf" 
                 className="w-full h-[500px] rounded"
-                onLoad={handlePdfLoad}
-                onError={handlePdfError}
               >
                 <div className="w-full h-[500px] bg-gray-100 rounded flex items-center justify-center">
                   <div className="text-gray-400 flex flex-col items-center">
