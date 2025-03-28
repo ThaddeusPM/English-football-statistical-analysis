@@ -2,13 +2,19 @@
 
 import Link from 'next/link';
 import { Inter, Playfair_Display } from 'next/font/google';
+import React, { Suspense, useEffect, useState } from 'react'
 
 // Font setup
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
+
 // Main component declaration
 const AnthropicAnalysisPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   // Scoreline probability data
   const data = [
